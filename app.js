@@ -25,7 +25,7 @@ const startTimer = () => {
     const secondsValue = parseInt(seconds.value);
     const minutesValue = parseInt(minutes.value);
     totalSeconds = secondsValue + minutesValue * 60;
-    setInterval(() => {
+    timer = setInterval(() => {
         console.log("Intervalling")
         const currentTime= Date.now();
         const diff = currentTime - startTime;
@@ -41,7 +41,9 @@ const startTimer = () => {
 }
 
 const pauseTimer = () => {
-
+    running = false;
+    startButton.innterText = "Start";
+    clearInterval(timer);
 }
 
 const padNumber = (number) => {
