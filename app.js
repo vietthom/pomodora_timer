@@ -65,4 +65,10 @@ const finishTimer = () => {
 
 const resetTimer = () => {
     console.log("resetting")
+    clearInterval(timer);
+    seconds.vaule = originalSeconds;
+    minutes.value = originalMinutes;
+    startButton.innerText = "Start";
+    ring.classList.remove('ending');
+    running = false;
 }
