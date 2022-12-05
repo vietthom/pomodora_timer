@@ -1,5 +1,5 @@
-# Pomodora Timer
-Stay focused using the Pomodora Timer to lock in your deep work sessions. <br>
+# Pomodoro Timer
+Stay focused using the Pomodoro Timer to lock in your deep work sessions. <br>
 Check it out here: https://graceful-meerkat-0216aa.netlify.app/
 
 ## Usage
