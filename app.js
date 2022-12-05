@@ -52,5 +52,6 @@ const padNumber = (number) => {
 }
 
 const finishTimer = () => {
-    
+    console.log("Finished");
+    alert("Time's up!");
 }
