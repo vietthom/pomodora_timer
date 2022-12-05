@@ -27,7 +27,6 @@ const startTimer = () => {
     const minutesValue = parseInt(minutes.value);
     totalSeconds = secondsValue + minutesValue * 60;
     timer = setInterval(() => {
-        console.log("Intervalling")
         const currentTime= Date.now();
         const diff = currentTime - startTime;
         const secondsLeft = totalSeconds - Math.floor(diff/1000);
@@ -54,7 +53,6 @@ const finishTimer = () => {
         alert("Time's up!");
         resetTimer();
     }, 0);
-    console.log("Finished");
 };
 
 const validateTimeInput = (e) => {
@@ -74,7 +72,6 @@ settingsButton.addEventListener('click', () => {
 });
 
 const resetTimer = () => {
-    console.log("resetting")
     clearInterval(timer);
     seconds.vaule = originalSeconds;
     minutes.value = originalMinutes;
