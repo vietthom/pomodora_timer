@@ -54,6 +54,15 @@ const padNumber = (number) => {
 }
 
 const finishTimer = () => {
+    clearInterval(timer);
+    ring.classList.add('ending');
+    setTimeout(() => {
+        alert("Time's up!");
+        resetTimer();
+    }, 0);
     console.log("Finished");
-    alert("Time's up!");
+}
+
+const resetTimer = () => {
+    console.log("resetting")
 }
